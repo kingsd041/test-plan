@@ -9,52 +9,52 @@
 	mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
  
 ### Windows Node Version
-- [ ] Windows Service Core 1809
+- [x] Windows Service Core 1809
  
 ### VMs
 - [ ] Azure
 - [ ] Google Cloud
-- [ ] AWS
+- [x] AWS
  
 ### CNI Support
-- [ ] Flannel (host-gw)
+- [x] Flannel (host-gw)
  
  
 ## Testing Cases
 Refer: https://kubernetes.io/docs/getting-started-guides/windows/#supported-features
  
 ### Kubernetes Versions
-- [ ] 1.14.1
+- [x] 1.14.1
  
 ### Workloads
 - [ ] Deployment
-	- Namespace
+	- [x] Namespace
 	- Port Mapping
-		- HostPort
-		- ClusterIP
-	- Environment Variables
-	- Node Scheduling
-	- Health Check
-	- Volume
-		- empty, hostPath
-		- pvc
-	- Scaing/Upgrade Policy
-	- Labels & Annotations
-	- Increase/decrease the scale of workloads
-	- Upgrade workloads
-	- Delete workloads
-	- Exec to pods
-	- View logs for pods
-	- Delete pods
-- [ ] Statefulset
-- [ ] Job
-- [ ] CronJob
-- [ ] Deamonset
+		- [x] HostPort
+		- [x] ClusterIP
+	- [x] Environment Variables
+	- [x] Node Scheduling
+	- [x] Health Check
+	- [ ] Volume
+		- [x] empty, hostPath
+		- [ ] pvc
+	- [x] Scaing/Upgrade Policy
+	- [x] Labels & Annotations
+	- [x] Increase/decrease the scale of workloads
+	- [x] Upgrade workloads
+	- [x] Delete workloads
+	- [x] Exec to pods
+	- [x] View logs for pods
+	- [x] Delete pods
+- [x] Statefulset
+- [x] Job
+- [x] CronJob
+- [x] Deamonset
  
 ### Pod scheduling
-- [ ] by node selector
-- [ ] by affinity
-- [ ] by taints
+- [x] by node selector
+- [x] by affinity
+- [x] by taints
  
 ### Networking
 - [x] Pod2Pod between Linux Pods via IP
@@ -87,30 +87,32 @@ Refer: https://kubernetes.io/docs/getting-started-guides/windows/#supported-feat
 - [x] Access Node via Pod
 
 ### Services
-- [ ] NodePort
-- [ ] ClusterIP
-- [ ] LoadBalancer
-- [ ] ExternalName
-- [ ] Headless services
+- [x] NodePort
+- [x] ClusterIP
+- [x] LoadBalancer
+- [x] ExternalName
+- [x] Headless services
 
 ### Volume
-- [ ] emptyDir
-- [ ] hostPath
+- [x] emptyDir
+- [x] hostPath
 - [ ] other storage class of Cloud Provider (Azure, GCP, AWS)
  
 ### ConfigMap & Secret
-- [ ] environment variables
-- [ ] volume usages
+- [x] environment variables
+- [x] volume usages
  
 ### Cluster Metrics
-- [ ] CPU
-- [ ] RAM
-- [ ] Disk
+- [x] CPU
+- [x] RAM
  
 ### Restart & Recreate
-- [ ] restart host, then testing networking, volume, …
-- [ ] restart rancher-agent (powershell: stop-service rancher-agent), then testing networking, volume, …
-- [ ] delete the node from UI, stop and clean rancher-agent on host (powershell: stop-service rancher-agent; sc.exe delete rancher-agent), then testing networking, volume, …
+- [x] restart host, then testing networking, volume, …
+- [ ] restart rancher-agent (powershell: stop-service rancher-agent), then testing networking, volume, …   
+> 重启rancher-agent，将导致pod重新创建，https://github.com/rancher/rancher/issues/20026   
+
+- [x] delete the node from UI, stop and clean rancher-agent on host (powershell: stop-service rancher-agent; sc.exe delete rancher-agent), then testing networking, volume, …
  
 ### Long Time Running Status
-- [ ] after 2 hours
+- [x] after 2 hours
+
