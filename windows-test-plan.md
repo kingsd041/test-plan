@@ -113,5 +113,5 @@ Refer: https://kubernetes.io/docs/getting-started-guides/windows/#supported-feat
 - [x] delete the node from UI, stop and clean rancher-agent on host (powershell: stop-service rancher-agent; sc.exe delete rancher-agent), then testing networking, volume, …
  
 ### Long Time Running Status
-- [x] after 2 hours
+- [x] after 2 days
 
