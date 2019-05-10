@@ -69,8 +69,7 @@ Refer: https://kubernetes.io/docs/getting-started-guides/windows/#supported-feat
 - [x] Pod2Service between Liunx Pod and Windows Service via DNS
 - [x] Pod2Service between Liunx Pod and Windows Service via FQDN
 - [x] Pod2Service between Windows Pod and Linux Service via IP
-- [ ] Pod2Service between Windows Pod and Linux Service via DNS   
-> 已知问题，参见：https://kubernetes.io/docs/setup/windows/intro-windows-in-kubernetes/#dns-limitations 
+- [x] Pod2Service between Windows Pod and Linux Service via DNS   
 - [x] Pod2Service between Windows Pod and Linux Service via FQDN
 - [x] Access NodePort Service via Linux Node & Ingress
 > 已知问题，Local NodePort access from the node itself fails (works for other nodes or external clients)    
